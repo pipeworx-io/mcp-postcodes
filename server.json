@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/postcodes",
+  "title": "Postcodes",
+  "description": "Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)",
+  "version": "1.0.1",
+  "websiteUrl": "https://pipeworx.io/packs/postcodes",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-postcodes",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/postcodes/mcp"
+    }
+  ]
+}

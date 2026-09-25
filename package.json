@@ -1,14 +1,32 @@
 {
   "name": "@pipeworx/mcp-postcodes",
-  "version": "1.0.0",
-  "description": "MCP server for UK postcode lookups via postcodes.io",
+  "version": "1.0.1",
+  "description": "Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)",
+  "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "license": "MIT",
+  "bin": {
+    "mcp-postcodes": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "postcodes"],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-postcodes.git"
+    "url": "git+https://github.com/pipeworx-io/mcp-postcodes.git"
   },
-  "files": ["src"]
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-4c9c51ec12707914d36046e70a2d6c3769cdabf30f1db1f783de43e1cfcb2d62",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+  }
 }
