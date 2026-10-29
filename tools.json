@@ -1,0 +1,58 @@
+[
+  {
+    "name": "lookup_postcode",
+    "description": "Get geographic details for a UK postcode (e.g., 'SW1A 1AA'). Returns coordinates, region, district, ward, and constituency.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "postcode": {
+          "type": "string",
+          "description": "UK postcode to look up (e.g. \"SW1A 1AA\" or \"SW1A1AA\")."
+        }
+      },
+      "required": [
+        "postcode"
+      ]
+    }
+  },
+  {
+    "name": "nearest_postcodes",
+    "description": "Find nearby UK postcodes sorted by distance from a given postcode (e.g., 'SW1A 1AA'). Returns list with coordinates.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "postcode": {
+          "type": "string",
+          "description": "UK postcode to find neighbours for (e.g. \"SW1A 1AA\")."
+        }
+      },
+      "required": [
+        "postcode"
+      ]
+    }
+  },
+  {
+    "name": "validate_postcode",
+    "description": "Validate a UK postcode format (e.g., 'SW1A 1AA'). Returns whether it's valid and format details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "postcode": {
+          "type": "string",
+          "description": "UK postcode to validate (e.g. \"SW1A 1AA\")."
+        }
+      },
+      "required": [
+        "postcode"
+      ]
+    }
+  },
+  {
+    "name": "random_postcode",
+    "description": "Get a random valid UK postcode with full geographic details. Returns coordinates, region, district, ward, and constituency.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
