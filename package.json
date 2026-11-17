@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-postcodes",
-  "version": "1.1.1",
-  "description": "Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)",
+  "version": "1.1.2",
+  "description": "Unofficial Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "postcodes",
     "gatewaySlug": "postcodes",
-    "sourceHash": "v1-622bd8160312891ab278205c105855954d46528e44c5ec471180f5ae154269f8",
-    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
+    "sourceHash": "v1-1e7692c01bc448eb3a4035de0c28dd53e55cb87a64e4fb35ba20e791974d19f4",
+    "sourceCommit": "6e7ae693219a515a7ee6dd88d02390ab290fbad3"
   }
 }

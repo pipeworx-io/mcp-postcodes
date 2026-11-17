@@ -1,14 +1,14 @@
 # mcp-postcodes
 
-Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)
+Unofficial Postcodes MCP — wraps postcodes.io UK postcode API (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2007+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `lookup_postcode` | Get geographic details for a UK postcode (e.g., 'SW1A 1AA'). Returns coordinates, region, district, ward, and constituency. |
+| `postcodes_lookup_postcode` | Get geographic details for a UK postcode (e.g., 'SW1A 1AA'). Returns coordinates, region, district, ward, and constituency. |
 | `nearest_postcodes` | Find nearby UK postcodes sorted by distance from a given postcode (e.g., 'SW1A 1AA'). Returns list with coordinates. |
 | `validate_postcode` | Validate a UK postcode format (e.g., 'SW1A 1AA'). Returns whether it's valid and format details. |
 | `random_postcode` | Get a random valid UK postcode with full geographic details. Returns coordinates, region, district, ward, and constituency. |
@@ -57,7 +57,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1866+ data sources. The
+Both URLs reach the same gateway and the same 2007+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

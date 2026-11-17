@@ -1,6 +1,6 @@
 [
   {
-    "name": "lookup_postcode",
+    "name": "postcodes_lookup_postcode",
     "description": "Get geographic details for a UK postcode (e.g., 'SW1A 1AA'). Returns coordinates, region, district, ward, and constituency.",
     "inputSchema": {
       "type": "object",
